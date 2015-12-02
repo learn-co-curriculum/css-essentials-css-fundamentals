@@ -8,3 +8,5 @@
 [Tuts Plus - 30 CSS selectors to Memorize](http://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
 
 [Learn More Pseudo Selectors](https://css-tricks.com/pseudo-class-selectors/)
+
+<a href='https://learn.co/lessons/CSS-Fundamentals' data-visibility='hidden'>View this lesson on Learn.co</a>
