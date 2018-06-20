@@ -157,7 +157,7 @@ article p {
 }
 ```
 
-In this case, _only_ `p` elements within the `header` element will recieve the
+In this case, _only_ `p` elements within the `header` element will receive the
 styling.
 
 ID, class, compound and descendant selectors are the kind of selectors you will
@@ -178,7 +178,7 @@ article > p {
 
 Only `p` tags one level down from `article` will display as blue. If there are
 `p` tags within an `aside` element within the `article` element, they will not
-recieve the same instructions.
+receive the same instructions.
 
 #### Adjacent Sibling Selector
 
@@ -206,7 +206,7 @@ h3 ~ p {
 ```
 
 With this general sibling selector, all paragraph elements that come after the
-`h3` will recieve the styling.
+`h3` will receive the styling.
 
 #### Universal
 
