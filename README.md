@@ -157,7 +157,7 @@ article p {
 }
 ```
 
-In this case, _only_ `p` elements within the `header` element will receive the
+In this case, _only_ `p` elements within the `article` element will receive the
 styling.
 
 ID, class, compound and descendant selectors are the kind of selectors you will
