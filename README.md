@@ -197,7 +197,7 @@ element but not paragraphs that come after the first.
 #### General Sibling Selector
 
 The general sibling selector (sometimes called the preceded selector) will style
-all matched elements preceding after the selector name.
+all matched elements after the preceeding selector name.
 
 ```
 h3 ~ p {
