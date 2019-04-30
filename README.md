@@ -102,7 +102,7 @@ you can choose the right one when you need it.
 #### ID and Class Selectors
 
 ID selectors target all elements with a specific ID attribute value. The way we
-specify an ID selector in a CSS rule is is to follow the element name with a
+specify an ID selector in a CSS rule is to follow the element name with a
 hash tag and then the ID attribute value we want to match.
 
 ```
