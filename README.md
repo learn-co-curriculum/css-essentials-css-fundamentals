@@ -113,7 +113,7 @@ p#introduction {
 
 In this case, the browser will look for a `p` element with the ID attribute
 "introduction" and apply the CSS to that element. ID selectors are useful when
-you want to give a single element on the page an unique identity and set it
+you want to give a single element on the page a unique identity and set it
 apart from everything else.
 
 Class selectors target all elements with a class attribute value matching the
