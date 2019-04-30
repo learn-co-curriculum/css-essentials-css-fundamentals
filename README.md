@@ -239,7 +239,7 @@ then apply the width we want. There are many different ways to use this type of
 selector with various combinations of operations and attribute values, so you
 can refer to the resources to explore them all.
 
-#### Psuedo-class Selectors
+#### Pseudo-class Selectors
 
 Pseudo-class selectors target elements based on a particular state of an element
 or relationship to other elements. The way we signify a pseudo class selector is
