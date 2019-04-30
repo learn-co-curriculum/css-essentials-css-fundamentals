@@ -332,7 +332,6 @@ or reminders along side our CSS code.
 
 ## Resources
 
-- <a href="https://www.youtube.com/watch?v=-k-1TU8qq0Q">Lesson in video format</a>
 - <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started">MDN: CSS Tutorials for Beginners</a>
 - <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">MDN: CSS Property Reference</a>
 - <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/inheritance">MDN: CSS Inheritance</a>
