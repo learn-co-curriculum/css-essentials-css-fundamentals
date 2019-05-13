@@ -10,7 +10,9 @@
 
 ## Introduction
 
-In this lesson, we'll build on the basics we've learned. We'll learn to select elements based on HTML attributes, we'll learn to apply colors, and we'll learn how to comment our CSS.
+In this lesson, we'll build on the basics we've learned. We'll learn to select
+elements based on HTML attributes, we'll learn to apply colors, and we'll learn
+how to comment our CSS.
 
 ## Identify CSS Syntax
 
@@ -30,7 +32,8 @@ as blue.
 
 ## Identify CSS Use Formats
 
-How do we "apply" CSS to an HTML page? By using one of three CSS use formats: inline, internal (or embedded) and external.
+How do we "apply" CSS to an HTML page? By using one of three CSS use formats:
+inline, internal (or embedded) and external.
 
 Inline includes the styles directly into the HTML element with the `style`
 attribute.
@@ -40,7 +43,7 @@ attribute.
 ```
 
 While you might see this sort of styling in something like the code for an HTML
-email, this is generally not best practice for two reasons. The primary reason
+email, this is generally not the best practice for two reasons. The primary reason
 is because it only affects that single element. If we want all paragraph
 elements on our page to appear blue, we would have to add that attribute to
 every element individually, which is inefficient and difficult to maintain into
@@ -103,7 +106,7 @@ you can choose the right one when you need it.
 
 ID selectors target all elements with a specific ID attribute value. The way we
 specify an ID selector in a CSS rule is to follow the element name with a
-hash tag and then the ID attribute value we want to match.
+hash symbol and then the ID attribute value we want to match.
 
 ```
 p#introduction {
@@ -127,7 +130,7 @@ p.alert {
 ```
 
 The difference between IDs and classes is that IDs are meant for one element on
-the page that has unique identity where class selectors are meant to be spread
+the page that has a unique identity where class selectors are meant to be spread
 throughout the page across multiple elements.
 
 ### Compound Selectors
@@ -197,7 +200,7 @@ element but not paragraphs that come after the first.
 ### General Sibling Selector
 
 The general sibling selector (sometimes called the preceded selector) will style
-all matched elements after the preceeding selector name.
+all matched elements after the preceding selector name.
 
 ```
 h3 ~ p {
@@ -219,7 +222,7 @@ not targeted by other rules. It's indicated by the star symbol.
 }
 ```
 
-In this case this is going to set the color of the text yellow for any element
+In this case, this is going to set the color of the text yellow for any element
 that hasn't had its color property specified elsewhere.
 
 ### Attribute Selectors
@@ -234,9 +237,9 @@ input[type="text"] {
 ```
 
 Here we want to find `input` elements, but only those with a `type` value that
-matches "text." For those elements that fit the requirements, the browswer will
+matches "text." For those elements that fit the requirements, the browser will
 then apply the width we want. There are many different ways to use this type of
-selector with various combinations of operations and attribute values, so you
+selector with various combinations of operations and attribute values so you
 can refer to the resources to explore them all.
 
 ### Pseudo-class Selectors
@@ -257,8 +260,8 @@ a:visited {
 
 These two link examples reflect the way links that are both unvisited and
 visited will be displayed differently. If the link is unvisited, it will show as
-blue. If it has been visited, it will show up purple. Psuedo-class selectors,
-like attribute selectors, have a lot of aspects, so you can explore them more in
+blue. If it has been visited, it will show up purple. Pseudo-class selectors,
+like attribute selectors, have a lot of aspects so you can explore them more in
 other resources.
 
 ## Implement Various Types of Color Values in CSS
@@ -269,7 +272,7 @@ be better off to use different ways of defining our colors.
 
 #### Hexidecimal Color Values
 
-Most often developers use a set of numbers called hexadecimals, which represents
+Most often developers use a set of numbers called hexadecimal, which represents
 a wide range of colors. Hex colors begin with `#` and are followed by,
 generally, 6 numbers, but some of these numbers are actually letters. The lowest
 single digit number in hex is 0 and the highest single digit number is f. This
@@ -283,7 +286,7 @@ Hexadecimal Numbers:  0, 1, 2, 3, 4, 5, 6, 7, 8, 9,  a,  b,  c,  d,  e,  f, 10
 Hex colors work by creating Red, Green, Blue (RGB) values. Traditional RGB
 colors are on a scale of 0 to 255 for each of the three colors in the spectrum.
 `#000000` translates to black since 0 reds, 0 green, 0 blues represents the
-absence of all colors, and `#ffffff` makes white since 255 reds, 255 greens, and
+absence of all colors and `#ffffff` makes white since 255 reds, 255 greens, and
 255 blues equal the maximum of each of the colors.
 
 Hex colors can be shortened to just three numbers when each RGB value is the
@@ -311,7 +314,7 @@ p {
 }
 ```
 
-This example will show up as blue, with 50% opacity, so the element will have a
+This example will show up as blue, with 50% opacity so the element will have a
 somewhat transparent color.
 
 ## Identify and Implement CSS Comments
@@ -328,7 +331,7 @@ p.alert {
 
 Everything in between the `/* */` is a CSS comment. The browser will not pay
 attention to these comments, but they can be useful for us to add explanations
-or reminders along side our CSS code.
+or reminders alongside our CSS code.
 
 ## Resources
 
@@ -349,6 +352,6 @@ or reminders along side our CSS code.
 We reviewed the specifics of CSS syntax and covered the different ways we can
 connect CSS to HTML. We ran through the various types of CSS selectors,
 including IDs, classes, compound, child, adjacent sibling, general sibling,
-universal, attribute and psuedo-classes. We also took a look at the various ways
-to express colors, from standard color names to hexidecimal and RBG values.
+universal, attribute and pseudo-classes. We also took a look at the various ways
+to express colors, from standard color names to hexadecimal and RBG values.
 Lastly, we identified how to read and write CSS comments.
