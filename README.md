@@ -74,7 +74,7 @@ CSS will only apply to the single document. Other paragraph elements on other
 pages in the same website will be unaffected.
 
 If we want our CSS to carry across various pages, we can use an external
-stylesheet. This is a separate CSS file that we link in the `head` of HTML
+style sheet. This is a separate CSS file that we link in the `head` of HTML
 documents.
 
 ```
@@ -92,7 +92,7 @@ documents.
 ```
 
 With the `link` tag, we can use the relation attribute to define the target as a
-stylesheet and the link source our CSS file that contains all the CSS we want to
+style sheet and the link source our CSS file that contains all the CSS we want to
 use on our site. This is by far the easiest way to link CSS to HTML and apply
 styles across all of our pages.
 
@@ -270,7 +270,7 @@ We've been using color names in our examples to keep it simple, but only a
 handful of color names are recognized by all browsers. When writing CSS, we'll
 be better off to use different ways of defining our colors.
 
-#### Hexidecimal Color Values
+#### Hexadecimal Color Values
 
 Most often developers use a set of numbers called hexadecimal, which represents
 a wide range of colors. Hex colors begin with `#` and are followed by,
@@ -294,7 +294,7 @@ same for each digit. So `#111111` can be written as `#111`.
 
 ### RGB Color Values
 
-We can also work directly with RBG values.
+We can also work directly with RGB values.
 
 ```
 p {
@@ -353,5 +353,5 @@ We reviewed the specifics of CSS syntax and covered the different ways we can
 connect CSS to HTML. We ran through the various types of CSS selectors,
 including IDs, classes, compound, child, adjacent sibling, general sibling,
 universal, attribute and pseudo-classes. We also took a look at the various ways
-to express colors, from standard color names to hexadecimal and RBG values.
+to express colors, from standard color names to hexadecimal and RGB values.
 Lastly, we identified how to read and write CSS comments.
