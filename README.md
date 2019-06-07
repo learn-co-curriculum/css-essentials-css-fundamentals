@@ -355,4 +355,3 @@ including IDs, classes, compound, child, adjacent sibling, general sibling,
 universal, attribute and pseudo-classes. We also took a look at the various ways
 to express colors, from standard color names to hexadecimal and RGB values.
 Lastly, we identified how to read and write CSS comments.
-
