@@ -19,7 +19,7 @@ how to comment our CSS.
 Before we turn to the various ways we can extend CSS rules, let's go over the
 foundational syntax CSS uses.
 
-<img src="https://curriculum-content.s3.amazonaws.com/fewds/css-syntax.png" alt="CSS syntax diagram labeling selector, property and value" width="500" />
+<img src="https://curriculum-content.s3.amazonaws.com/css-essentials/css-fundamentals/Image_43_ReCreateGraphic.png" alt="CSS syntax diagram labeling selector, property and value" width="500" />
 
 We create a CSS rule by defining the selector, which matches the HTML element we
 want to style. Inside the curly braces we declare the properties we want to
