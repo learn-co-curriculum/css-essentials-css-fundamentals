@@ -335,7 +335,7 @@ or reminders alongside our CSS code.
 
 ## Resources
 
-- [MDN: CSS Tutorials for Beginners](<https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started)
+- [MDN: CSS Tutorials for Beginners](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started)
 - [MDN: CSS Property Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
 - [MDN: CSS Inheritance](https://developer.mozilla.org/en-US/docs/Web/CSS/inheritance)
 - [Tuts Plus: 30 CSS selectors to Memorize](https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
