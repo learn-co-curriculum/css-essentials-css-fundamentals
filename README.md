@@ -19,7 +19,7 @@ how to comment our CSS.
 Before we turn to the various ways we can extend CSS rules, let's go over the
 foundational syntax CSS uses.
 
-<img src="https://curriculum-content.s3.amazonaws.com/css-essentials/css-fundamentals/Image_43_ReCreateGraphic.png" alt="CSS syntax diagram labeling selector, property and value" width="500" />
+![](https://curriculum-content.s3.amazonaws.com/css-essentials/css-fundamentals/Image_43_ReCreateGraphic.png)
 
 We create a CSS rule by defining the selector, which matches the HTML element we
 want to style. Inside the curly braces we declare the properties we want to
@@ -335,17 +335,17 @@ or reminders alongside our CSS code.
 
 ## Resources
 
-- <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started">MDN: CSS Tutorials for Beginners</a>
-- <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">MDN: CSS Property Reference</a>
-- <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/inheritance">MDN: CSS Inheritance</a>
-- <a href="https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048">Tuts Plus: 30 CSS selectors to Memorize</a>
-- <a href="http://css-tricks.com/pseudo-class-selectors/">CSS Tricks: Learn More Pseudo Selectors</a>
-- <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Web_fonts">MDN: Using Web Fonts</a>
-- <a href="http://learn.shayhowe.com/advanced-html-css/performance-organization/">Shay Howe: CSS Performance & Organization, Best Practices</a>
-- <a href="https://color.adobe.com/create/color-wheel/">Adobe Color Tool</a>
-- <a href="http://jigsaw.w3.org/css-validator/">CSS Validator</a>
-- <a href="http://flukeout.github.io/">CSS Diner Game</a>
-- <a href="https://css-tricks.com/yay-for-hsla/">CSS Tricks: Hue, Saturation and Lightness</a>
+- [MDN: CSS Tutorials for Beginners](<https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started)
+- [MDN: CSS Property Reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+- [MDN: CSS Inheritance](https://developer.mozilla.org/en-US/docs/Web/CSS/inheritance)
+- [Tuts Plus: 30 CSS selectors to Memorize](https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048)
+- [CSS Tricks: Learn More Pseudo Selectors](http://css-tricks.com/pseudo-class-selectors/)
+- [MDN: Using Web Fonts](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Web_fonts)
+- [Shay Howe: CSS Performance & Organization, Best Practices](http://learn.shayhowe.com/advanced-html-css/performance-organization/)
+- [Adobe Color Tool](https://color.adobe.com/create/color-wheel/)
+- [CSS Validator](http://jigsaw.w3.org/css-validator/)
+- [CSS Diner Game](http://flukeout.github.io/)
+- [CSS Tricks: Hue, Saturation and Lightness](https://css-tricks.com/yay-for-hsla/)
 
 ## Conclusion
 
