@@ -333,6 +333,15 @@ Everything in between the `/* */` is a CSS comment. The browser will not pay
 attention to these comments, but they can be useful for us to add explanations
 or reminders alongside our CSS code.
 
+## Conclusion
+
+We reviewed the specifics of CSS syntax and covered the different ways we can
+connect CSS to HTML. We ran through the various types of CSS selectors,
+including IDs, classes, compound, child, adjacent sibling, general sibling,
+universal, attribute and pseudo-classes. We also took a look at the various ways
+to express colors, from standard color names to hexadecimal and RGB values.
+Lastly, we identified how to read and write CSS comments.
+
 ## Resources
 
 - [MDN: CSS Tutorials for Beginners](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started)
@@ -346,12 +355,3 @@ or reminders alongside our CSS code.
 - [CSS Validator](http://jigsaw.w3.org/css-validator/)
 - [CSS Diner Game](http://flukeout.github.io/)
 - [CSS Tricks: Hue, Saturation and Lightness](https://css-tricks.com/yay-for-hsla/)
-
-## Conclusion
-
-We reviewed the specifics of CSS syntax and covered the different ways we can
-connect CSS to HTML. We ran through the various types of CSS selectors,
-including IDs, classes, compound, child, adjacent sibling, general sibling,
-universal, attribute and pseudo-classes. We also took a look at the various ways
-to express colors, from standard color names to hexadecimal and RGB values.
-Lastly, we identified how to read and write CSS comments.
