@@ -142,20 +142,20 @@ throughout the page across multiple elements.
 ### Compound Selectors
 
 Compound selectors let us apply the same CSS rules to multiple elements at once.
-If we want to make both `h1` and `h2` elements display green, we use both as
+If we want to make both `h2` and `h3` elements display green, we use both as
 selectors, separated with a comma.
 
 ```css
-h1,
-h2 {
+h2,
+h3 {
   color: green;
 }
 ```
 
 ```html
-<h1>I'm green</h1>
-<h2>I'm green too</h2>
-<h3>I'm not green</h3>
+<h2>I'm green</h2>
+<h3>I'm green too</h3>
+<h4>I'm not green</h4>
 ```
 
 This eliminates the need to rewrite a new CSS rule containing the same styles
@@ -271,7 +271,7 @@ In this case, this is going to set the color of the text yellow for any element
 that hasn't had its color property specified elsewhere.
 
 ```html
-<h1>I'm yellow</h1>
+<h2>I'm yellow</h2>
 
 <p>I'm yellow</p>
 
