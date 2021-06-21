@@ -38,7 +38,7 @@ inline, internal (or embedded) and external.
 Inline includes the styles directly into the HTML element with the `style`
 attribute.
 
-```
+```html
 <p style="color: blue;"></p>
 ```
 
@@ -52,18 +52,18 @@ our principle of separation of content and presentation.
 
 Internal CSS is inside of `style` tags in the HTML document's `head` section.
 
-```
+```html
 <!DOCTYPE html>
 <html>
   <head>
     <style>
-      p { color: blue; }
+      p {
+        color: blue;
+      }
     </style>
   </head>
   <body>
-
-  <p>This is a paragraph.</p>
-
+    <p>This is a paragraph.</p>
   </body>
 </html>
 ```
@@ -77,16 +77,14 @@ If we want our CSS to carry across various pages, we can use an external
 style sheet. This is a separate CSS file that we link in the `head` of HTML
 documents.
 
-```
+```html
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-
-  <p>This is a paragraph.</p>
-
+    <p>This is a paragraph.</p>
   </body>
 </html>
 ```
@@ -105,28 +103,36 @@ you can choose the right one when you need it.
 ### ID and Class Selectors
 
 ID selectors target all elements with a specific ID attribute value. The way we
-specify an ID selector in a CSS rule is to follow the element name with a
-hash symbol and then the ID attribute value we want to match.
+specify an ID selector in a CSS rule is to follow the element name with a hash
+symbol and then the ID attribute value we want to match. In this case, the
+browser will look for a `p` element with the ID attribute "introduction" and
+apply the CSS to that element.
 
-```
+```css
 p#introduction {
   color: blue;
 }
 ```
 
-In this case, the browser will look for a `p` element with the ID attribute
-"introduction" and apply the CSS to that element. ID selectors are useful when
-you want to give a single element on the page a unique identity and set it
-apart from everything else.
+```html
+<p id="introduction">I'm blue</p>
+```
+
+ID selectors are useful when you want to give a single element on the page a
+unique identity and set it apart from everything else.
 
 Class selectors target all elements with a class attribute value matching the
 selector name. We specify a class selector using the period symbol followed by
 the name value.
 
-```
+```css
 p.alert {
   color: red;
 }
+```
+
+```html
+<p class="alert">I'm red</p>
 ```
 
 The difference between IDs and classes is that IDs are meant for one element on
@@ -139,10 +145,17 @@ Compound selectors let us apply the same CSS rules to multiple elements at once.
 If we want to make both `h1` and `h2` elements display green, we use both as
 selectors, separated with a comma.
 
-```
-h1, h2 {
+```css
+h1,
+h2 {
   color: green;
 }
+```
+
+```html
+<h1>I'm green</h1>
+<h2>I'm green too</h2>
+<h3>I'm not green</h3>
 ```
 
 This eliminates the need to rewrite a new CSS rule containing the same styles
@@ -154,7 +167,7 @@ Descendant selectors target elements that are descendants of the matching
 selector name. A descendant selector is indicated by a space in between one
 selector and another selector.
 
-```
+```css
 article p {
   color: blue;
 }
@@ -162,6 +175,14 @@ article p {
 
 In this case, _only_ `p` elements within the `article` element will receive the
 styling.
+
+```html
+<article>
+  <p>I'm blue</p>
+</article>
+
+<p>I'm not blue</p>
+```
 
 ID, class, compound and descendant selectors are the kind of selectors you will
 probably use in your CSS on a regular basis. From this point on, we get into
@@ -173,22 +194,34 @@ but they can accomplish some powerful operations.
 The child selector targets all elements that are the immediate children of a
 specified element.
 
-```
+```css
 article > p {
   color: blue;
 }
 ```
 
-Only `p` tags one level down from `article` will display as blue. If there are
-`p` tags within an `aside` element within the `article` element, they will not
-receive the same instructions.
+Only `p` tags exactly one level down from `article` will display as blue. If
+there are `p` tags within an `aside` element within the `article` element, they
+will not receive the same instructions.
+
+```html
+<article>
+  <p>I'm blue</p>
+</article>
+
+<article>
+  <aside>
+    <p>I'm not blue</p>
+  </aside>
+</article>
+```
 
 ### Adjacent Sibling Selector
 
 The adjacent sibling selector targets elements that appear directly after the matching
 selector name. We indicate it using a plus symbol.
 
-```
+```css
 h3 + p {
   color: blue;
 }
@@ -197,12 +230,18 @@ h3 + p {
 Here the adjacent sibling selector will style the paragraph directly following an `h3`
 element but not paragraphs that come after the first.
 
+```html
+<h3>Header</h3>
+<p>I'm blue</p>
+<p>I'm not blue</p>
+```
+
 ### General Sibling Selector
 
 The general sibling selector (sometimes called the preceded selector) will style
 all matched elements after the preceding selector name.
 
-```
+```css
 h3 ~ p {
   color: red;
 }
@@ -211,12 +250,18 @@ h3 ~ p {
 With this general sibling selector, all paragraph elements that come after the
 `h3` will receive the styling.
 
+```html
+<h3>Header</h3>
+<p>I'm red</p>
+<p>I'm red</p>
+```
+
 ### Universal
 
 The universal selector matches any elements and will apply to elements that are
 not targeted by other rules. It's indicated by the star symbol.
 
-```
+```css
 * {
   color: yellow;
 }
@@ -225,12 +270,20 @@ not targeted by other rules. It's indicated by the star symbol.
 In this case, this is going to set the color of the text yellow for any element
 that hasn't had its color property specified elsewhere.
 
+```html
+<h1>I'm yellow</h1>
+
+<p>I'm yellow</p>
+
+<div>I'm yellow</div>
+```
+
 ### Attribute Selectors
 
 The `attribute` selector can target elements with a particular attribute. We can
 also define exactly which attribute we want to match.
 
-```
+```css
 input[type="text"] {
   width: 200px;
 }
@@ -242,13 +295,18 @@ then apply the width we want. There are many different ways to use this type of
 selector with various combinations of operations and attribute values so you
 can refer to the resources to explore them all.
 
+```html
+<input type="text" value="I'm 200px" />
+<input type="submit" value="I'm not 200px" />
+```
+
 ### Pseudo-class Selectors
 
 Pseudo-class selectors target elements based on a particular state of an element
 or relationship to other elements. The way we signify a pseudo class selector is
 with the colon symbol.
 
-```
+```css
 a:link {
   color: blue;
 }
@@ -264,13 +322,19 @@ blue. If it has been visited, it will show up purple. Pseudo-class selectors,
 like attribute selectors, have a lot of aspects so you can explore them more in
 other resources.
 
+```html
+<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes">
+  I'm blue before you click, and purple after
+</a>
+```
+
 ## Implement Various Types of Color Values in CSS
 
 We've been using color names in our examples to keep it simple, but only a
 handful of color names are recognized by all browsers. When writing CSS, we'll
 be better off to use different ways of defining our colors.
 
-#### Hexadecimal Color Values
+### Hexadecimal Color Values
 
 Most often developers use a set of numbers called hexadecimal, which represents
 a wide range of colors. Hex colors begin with `#` and are followed by,
@@ -278,7 +342,7 @@ generally, 6 numbers, but some of these numbers are actually letters. The lowest
 single digit number in hex is 0 and the highest single digit number is f. This
 table might help to visualize what we mean by this.
 
-```
+```txt
 Decimal Numbers:      0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16
 Hexadecimal Numbers:  0, 1, 2, 3, 4, 5, 6, 7, 8, 9,  a,  b,  c,  d,  e,  f, 10
 ```
@@ -296,7 +360,7 @@ same for each digit. So `#111111` can be written as `#111`.
 
 We can also work directly with RGB values.
 
-```
+```css
 p {
   color: rgb(255, 255, 255);
 }
@@ -308,7 +372,7 @@ values (255).
 You can also add an extra channel to your RGB color by setting an "a" value,
 which represents opacity.
 
-```
+```css
 p {
   color: rgba(0, 0, 255, 0.5);
 }
@@ -323,7 +387,7 @@ Sometimes developers want to put into their code information that helps other
 humans understand what the code is doing but without bothering the browser. We
 do this with comments, and CSS has its own way to mark up comments.
 
-```
+```css
 p.alert {
   color: #ff0000; /* Alert text displays red */
 }
